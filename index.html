@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
+
 <body>
 
 
@@ -14,7 +16,7 @@
     <header>
         <div class="profile">
             <img src="./src/img/profile-pic.jpg" alt="profile-pic">
-            <h1>Marcos</h1>
+            <h1>M</h1>
             <div class="social-icons">
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-github"></i></a>
@@ -26,7 +28,7 @@
         <nav>
             <ul>
                 <li><a href="#" class="active"><i class="fa-solid fa-house nav-icon"></i> Home</a></li>
-                <li><a href="#"><i class="fa-solid fa-user nav-icon"></i> About Me</a></li>
+                <li><a href="#about"><i class="fa-solid fa-user nav-icon"></i> About Me</a></li>
                 <li><a href="#"><i class="fa-solid fa-briefcase nav-icon"></i> Portfolio</a></li>
                 <li><a href="#"><i class="fa-solid fa-envelope nav-icon"></i> Contact</a></li>
             </ul>
@@ -34,7 +36,7 @@
 
         <!-- Footer -->
         <div class="footer">
-            <p>&copy; Marcos Tarifa</p>
+            <p>&copy; All rights reserved</p>
         </div>
     </header>
 
@@ -43,17 +45,63 @@
 
     <!-- All Body Content -->
     <main>
+
+        <!-- Banner section -->
         <section id="home">
             <div class="home-row">
-                <h1>Hi, this is <br>Marcos Tarifa<span>.</span></h1>
+                <h1>Hi, and welcome <br>to my Portfolio<span>.</span></h1>
                 <p>I'm a <span class="auto-input"></span></p>
             </div>
         </section>
+        <!-- Baner section END-->
+
+        <!-- About Me section -->
+        <section id="about">
+            <h1 class="sub-heading">About Me</h1>
+            <div class="divider"></div>
+            <p>¡Hola! Soy un programador Full Stack Junior en busca de oportunidades para crecer y desarrollarme en la
+                industria del desarrollo de software. En mi experiencia, he trabajado en proyectos en los que he
+                colaborado en la creación, desarrollo y el mantenimiento de aplicaciones web, tanto del lado del cliente como del
+                servidor.</p>
+            <div class="about-col">
+                <!-- profile img -->
+                <div class="img-col">
+                    <img src="./src/img/plapla.png" alt="profile-pic">
+                </div>
+                <!-- information -->
+                <div class="info-col">
+                    <h2>Full Stack Developer!</h2>
+                    <p>Manejo el stack MERN y también tengo experiencia en el uso de herramientas como Git y GitHub
+                        para el control de versiones y la colaboración en equipo.</p>
+                    <div class="icon-list-col">
+                        <!-- LEFT side list -->
+                        <div class="icon-list">
+                            <ul>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Name:</strong> <span>Marcos</span></li>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Birthday:</strong> <span>Jan 21, 2000</a></span></li>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Website:</strong> <span>www.mat-portfolio.com</span></li>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Country:</strong> <span>Argentina</span></li>
+                            </ul>
+                        </div>
+                        <!-- RIGHT side list -->
+                        <div class="icon-list">
+                            <ul>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Last Name:</strong> <span>Tarifa</span></li>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Education:</strong> <span>Self-taught</span></li>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>E-mail:</strong> <span>thematdiez@gmail.com</span></li>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Me section END-->
     </main>
 
 
 
-    
+
 
     <!-- Typed.JS file -->
     <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
@@ -62,4 +110,5 @@
     <!-- FontAwesome JS File (Icon File) -->
     <script src="https://kit.fontawesome.com/d6ab4ce9d5.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
