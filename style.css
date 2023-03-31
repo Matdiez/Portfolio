@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Condiment&family=Roboto:wght@100&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+}
+
+body::-webkit-scrollbar{
+    display: none;
 }
 
 :root {
@@ -42,9 +47,20 @@ header {
 }
 
 .profile h1 {
+    padding: 0.3em;
+}
+
+.profile h1 a{
     color: white;
     font-weight: 600;
+    font-family: 'Condiment', sans-serif;
+    text-decoration: none;
 }
+
+.profile h1 a:hover {
+    color: #00A78E;
+}
+
 
 .social-icons a {
     display: inline-block;
@@ -446,3 +462,34 @@ main {
     }
 }
 /* SKILL SECTION END */
+
+/* PORTFIOLIO SECTION START */
+#portfolio {
+    padding: 70px 30px;
+    padding-top: 0px;
+}
+
+#portfolio .divider ~ p {
+    color: var(--textColor);
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    margin-top: 15px;
+    text-align: justify;
+}
+
+.port-row {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 35px;
+}
+
+.port-item {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 20%);
+}
+
+/* PORTFIOLIO SECTION END */
