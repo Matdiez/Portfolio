@@ -348,7 +348,7 @@ main {
 
 @media only screen and (max-width: 850px) {
     #about {
-        padding: 50px 10px;
+        padding: 50px 15px;
     }
 
     .divider ~ p {
@@ -481,8 +481,8 @@ main {
 .port-row {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 35px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
 }
 
 .port-item {
@@ -490,6 +490,61 @@ main {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 20%);
+}
+
+.port-item:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 80%);
+}
+
+.port-img {
+    margin-bottom: -7px;
+}
+
+.port-img img {
+    width: 100%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.port-info {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.port-btn i {
+    padding: 0.5em;
+    background-color: var(--iconBGColor);
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.port-btn i:hover {
+    background-color: #00A78E;
+}
+
+/* Mobile vew */
+@media only screen and (max-width: 850px) {
+    #portfolio {
+        padding: 50px 15px;
+    }
+    .port-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .port-row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (max-width: 290px) {
+    .port-btn i {
+        padding: 0.2em;
+    }
 }
 
 /* PORTFIOLIO SECTION END */
