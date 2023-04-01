@@ -182,7 +182,6 @@ main {
         margin-left: 0;
     }
 }
-
 /* HOME SECTION START*/
 #home {
     height: 100vh;
@@ -577,19 +576,22 @@ main {
 }
 
 .contact-left {
+    display: flex;
+    flex-direction: column;
     flex-basis: 38.5%;
     min-width: 38.5%;
     background-color: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 20%);
     border-radius: 8px;
     padding: 30px;
+    justify-content: center;
 }
 
 .icon-box {
     display: flex;
     gap: 15px;
     align-items: center;
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
 .icon i {
@@ -652,7 +654,7 @@ main {
 .contact-right form {
     display: flex;
     flex-direction: column;
-    gap: 20px 0;
+    gap: 10px 0;
 }
 
 .contact-right input, .contact-right textarea {
@@ -683,6 +685,12 @@ main {
     background-color: #008a75;
     color: white;
 }
+
+.g-recaptcha {
+    display: flex;
+    justify-content: center;
+}
+
 /* Movile view */
 @media only screen and (max-width: 800px){
     #contact {
@@ -695,3 +703,17 @@ main {
     }
 }
 /* CONTACT SECTION END */
+
+/* 1920x1080 and 4K Resolution support */
+@media only screen and (min-width: 1920px) {
+    #home, #about, #skill, #portfolio, #contact {
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+    .contact-right form {
+        gap: 50px 0;
+    }
+    .icon-box {
+        margin: 54px 0;
+    }
+}
