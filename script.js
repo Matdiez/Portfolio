@@ -30,9 +30,9 @@ window.addEventListener('scroll', function () {
     })
 })
 
-const btn = document.getElementById('button');
+const btn = document.getElementById('send-msg');
 
-document.getElementById('form').addEventListener('submit', function (event) {
+document.getElementById('contact-form').addEventListener('submit', function (event) {
     event.preventDefault();
 
     btn.value = 'Sending...';
