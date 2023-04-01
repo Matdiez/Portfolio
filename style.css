@@ -662,7 +662,7 @@ main {
     cursor: pointer;
 }
 
-.contact-right input:hover[type="submit"] {
+.contact-right input[type="submit"]:hover {
     background-color: #008a75;
     color: white;
 }
