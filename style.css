@@ -9,7 +9,7 @@
     scroll-behavior: smooth;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
 }
 
@@ -50,7 +50,7 @@ header {
     padding: 0.3em;
 }
 
-.profile h1 a{
+.profile h1 a {
     color: white;
     font-weight: 600;
     font-family: 'Condiment', sans-serif;
@@ -154,10 +154,12 @@ header nav ul li .active {
     header {
         left: -300px;
     }
+
     .footer {
         left: -300px;
         display: none;
     }
+
     #MenuBtn {
         display: block;
     }
@@ -229,14 +231,17 @@ main {
     #home {
         padding: 1.875em;
     }
+
     .home-row h1 {
         font-size: 35px;
         letter-spacing: 0;
         line-height: 50px;
     }
+
     .home-row h1 br {
         display: none;
     }
+
     .home-row p {
         color: white;
         font-size: 15px;
@@ -261,7 +266,7 @@ main {
     border: 3px;
 }
 
-#about .divider ~ p {
+#about .divider~p {
     color: var(--textColor);
     font-size: 15px;
     letter-spacing: 0.4px;
@@ -337,26 +342,32 @@ main {
     #about {
         padding: 50px 15px;
     }
-    .divider ~ p {
+
+    .divider~p {
         font-size: 14px;
         letter-spacing: 0px;
     }
+
     .about-col {
         flex-direction: column;
     }
+
     .img-col img {
         width: 50%;
     }
+
     .info-col h2 {
         font-weight: 600;
         font-size: 30px;
         letter-spacing: 0px;
         text-align: center;
     }
+
     .info-col p {
         font-size: 14px;
         letter-spacing: 0px;
     }
+
     .icon-list-col {
         flex-direction: column;
         gap: 0px;
@@ -378,7 +389,7 @@ main {
     padding-top: 0px;
 }
 
-#skill .divider ~ p {
+#skill .divider~p {
     color: var(--textColor);
     font-size: 15px;
     letter-spacing: 0.4px;
@@ -437,6 +448,7 @@ main {
     #skill {
         padding: 50px 15px;
     }
+
     .skill-row {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 10px;
@@ -448,7 +460,7 @@ main {
     padding-top: 30px;
 }
 
-#portfolio .divider ~ p {
+#portfolio .divider~p {
     color: var(--textColor);
     font-size: 15px;
     letter-spacing: 0.4px;
@@ -508,6 +520,7 @@ main {
     #portfolio {
         padding: 50px 15px;
     }
+
     .port-row {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -531,7 +544,7 @@ main {
     padding-bottom: 40px;
 }
 
-#contact .divider ~ p {
+#contact .divider~p {
     color: var(--textColor);
     font-size: 15px;
     letter-spacing: 0.4px;
@@ -582,7 +595,7 @@ main {
     background-color: var(--themeColor);
     color: var(--bgColor);
     cursor: pointer;
-} 
+}
 
 .info p {
     color: var(--textColor);
@@ -623,7 +636,8 @@ main {
     gap: 10px 0;
 }
 
-.contact-right input, .contact-right textarea {
+.contact-right input,
+.contact-right textarea {
     width: 100%;
     font-size: 1em;
     font-weight: 500;
@@ -636,7 +650,8 @@ main {
     transition: 0.5s;
 }
 
-.contact-right input:focus, .contact-right textarea:focus {
+.contact-right input:focus,
+.contact-right textarea:focus {
     border: 2px solid var(--themeColor);
 }
 
@@ -644,7 +659,7 @@ main {
     background-color: #00A78E;
     color: #2C2F3F;
     border: none;
-    cursor: pointer ;
+    cursor: pointer;
 }
 
 .contact-right input:hover[type="submit"] {
@@ -657,10 +672,11 @@ main {
     justify-content: center;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 800px) {
     #contact {
         padding: 50px 15px;
     }
+
     .contact-row {
         flex-direction: column;
         gap: 20px;
@@ -668,13 +684,20 @@ main {
 }
 
 @media only screen and (min-width: 1920px) {
-    #home, #about, #skill, #portfolio, #contact {
+
+    #home,
+    #about,
+    #skill,
+    #portfolio,
+    #contact {
         padding-left: 10em;
         padding-right: 10em;
     }
+
     .contact-right form {
         gap: 50px 0;
     }
+
     .icon-box {
         margin: 54px 0;
     }
