@@ -21,7 +21,6 @@ body::-webkit-scrollbar{
     --bgColor: #F7F7F7;
 }
 
-/* -- HEADER START -- */
 header {
     height: 100vh;
     width: 18.75em;
@@ -126,7 +125,6 @@ header nav ul li .active {
     transition: 0.5s;
 }
 
-/* mobile nav toggle */
 #MenuBtn {
     position: fixed;
     top: 25px;
@@ -156,21 +154,15 @@ header nav ul li .active {
     header {
         left: -300px;
     }
-
     .footer {
         left: -300px;
         display: none;
     }
-
     #MenuBtn {
         display: block;
     }
 }
-/* -- HEADER END -- */
 
-/* <---------------------------------------------------------------> */
-
-/* -- MAIN SECTION -- */
 main {
     margin-left: 18.75em;
     background-color: var(--bgColor);
@@ -182,7 +174,7 @@ main {
         margin-left: 0;
     }
 }
-/* HOME SECTION START*/
+
 #home {
     height: 100vh;
     width: 100%;
@@ -237,26 +229,21 @@ main {
     #home {
         padding: 1.875em;
     }
-
     .home-row h1 {
         font-size: 35px;
         letter-spacing: 0;
         line-height: 50px;
     }
-
     .home-row h1 br {
         display: none;
     }
-
     .home-row p {
         color: white;
         font-size: 15px;
         font-weight: 400;
     }
 }
-/* HOME SECTION END*/
 
-/* ABOUT ME SECTION START */
 #about {
     padding: 70px 30px;
 }
@@ -350,32 +337,26 @@ main {
     #about {
         padding: 50px 15px;
     }
-
     .divider ~ p {
         font-size: 14px;
         letter-spacing: 0px;
     }
-
     .about-col {
         flex-direction: column;
     }
-
     .img-col img {
         width: 50%;
     }
-
     .info-col h2 {
         font-weight: 600;
         font-size: 30px;
         letter-spacing: 0px;
         text-align: center;
     }
-
     .info-col p {
         font-size: 14px;
         letter-spacing: 0px;
     }
-
     .icon-list-col {
         flex-direction: column;
         gap: 0px;
@@ -391,9 +372,7 @@ main {
 .sub-heading-skill {
     padding-top: 2.5em;
 }
-/* ABOUT ME SECTION END */
 
-/* SKILL SECTION START */
 #skill {
     padding: 70px 30px;
     padding-top: 0px;
@@ -454,20 +433,16 @@ main {
     border-radius: 15px;
 }
 
-/* Mobile vew */
 @media only screen and (max-width: 450px) {
     #skill {
         padding: 50px 15px;
     }
-
     .skill-row {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 10px;
     }
 }
-/* SKILL SECTION END */
 
-/* PORTFIOLIO SECTION START */
 #portfolio {
     padding: 70px 30px;
     padding-top: 30px;
@@ -529,7 +504,6 @@ main {
     background-color: #00A78E;
 }
 
-/* Mobile vew */
 @media only screen and (max-width: 850px) {
     #portfolio {
         padding: 50px 15px;
@@ -550,9 +524,7 @@ main {
         padding: 0.2em;
     }
 }
-/* PORTFIOLIO SECTION END */
 
-/* CONTACT SECTION START */
 #contact {
     padding: 70px 30px;
     padding-top: 30px;
@@ -632,12 +604,6 @@ main {
     }
 }
 
-/*.map {
-    height: 256px;
-    border: 3px solid var(--themeColor);
-    border-radius: 10px;
-}*/
-
 .map iframe {
     border-radius: 8px;
 }
@@ -691,20 +657,16 @@ main {
     justify-content: center;
 }
 
-/* Movile view */
 @media only screen and (max-width: 800px){
     #contact {
         padding: 50px 15px;
     }
-
     .contact-row {
         flex-direction: column;
         gap: 20px;
     }
 }
-/* CONTACT SECTION END */
 
-/* 1920x1080 and 4K Resolution support */
 @media only screen and (min-width: 1920px) {
     #home, #about, #skill, #portfolio, #contact {
         padding-left: 10em;
