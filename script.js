@@ -35,3 +35,12 @@ window.addEventListener('scroll', function() {
         }
     })
 })
+
+//reCAPTCHA requerido
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    var recaptcha = document.querySelector('[name="g-recaptcha-response"]');
+    if (recaptcha.value === '') {
+      event.preventDefault();
+      alert('Por favor, completa el reCAPTCHA');
+    }
+});

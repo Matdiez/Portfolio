@@ -376,12 +376,12 @@
                 </div>
                 <!-- Right Col -->
                 <div class="contact-right">   
-                    <form action="">
-                        <input type="text" name="name" id="name" placeholder="Name">
-                        <input type="email" name="email" id="email" placeholder="E-mail">
-                        <input type="text" name="subject" id="subject" placeholder="Subject">
-                        <textarea name="msg" id="msg" rows="9" placeholder="Message"></textarea>
-                        <div class="g-recaptcha" data-sitekey="6Lch1UslAAAAALlB3G5GRaHceLJfrH1Qy-KkpUkJ"></div>
+                    <form id="contact-form">
+                        <input type="text" name="name" id="name" placeholder="Name" required>
+                        <input type="email" name="email" id="email" placeholder="E-mail" required>
+                        <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                        <textarea name="msg" id="msg" rows="9" placeholder="Message"></textarea required>
+                        <div class="g-recaptcha" data-sitekey="6Lch1UslAAAAALlB3G5GRaHceLJfrH1Qy-KkpUkJ" aria-required="true"></div>
                         <input type="submit" value="Send">
                     </form>
                 </div>
