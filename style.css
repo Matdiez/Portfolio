@@ -58,7 +58,7 @@ header {
 }
 
 .profile h1 a:hover {
-    color: #00A78E;
+    color: var(--themeColor);
 }
 
 
@@ -262,7 +262,7 @@ main {
 .divider {
     width: 100%;
     height: 4px;
-    background-color: #00A78E;
+    background-color: var(--themeColor);
     border: 3px;
 }
 
@@ -297,7 +297,7 @@ main {
 }
 
 .info-col h2 {
-    color: #00A78E;
+    color: var(--themeColor);
     font-weight: 700;
     font-size: 35px;
     letter-spacing: 0.5px;
@@ -307,7 +307,7 @@ main {
 .info-col p {
     font-size: 15px;
     letter-spacing: 0.5px;
-    color: #525252;
+    color: var(--textColor);
     font-style: italic;
     text-align: justify;
 }
@@ -324,7 +324,7 @@ main {
 }
 
 .icon-list ul li i {
-    color: #00A78E;
+    color: var(--themeColor);
 }
 
 .icon-list ul li strong {
@@ -440,7 +440,7 @@ main {
 
 .skill-inner-line {
     height: 10px;
-    background-color: #00A78E;
+    background-color: var(--themeColor);
     border-radius: 15px;
 }
 
@@ -513,7 +513,7 @@ main {
 }
 
 .port-btn i:hover {
-    background-color: #00A78E;
+    background-color: var(--themeColor);
 }
 
 @media only screen and (max-width: 850px) {
@@ -607,7 +607,7 @@ main {
 }
 
 .info a:hover {
-    color: #00A78E;
+    color: var(--themeColor);
     text-decoration: underline;
 }
 
@@ -656,15 +656,14 @@ main {
 }
 
 .contact-right input[type="submit"] {
-    background-color: #00A78E;
-    color: #2C2F3F;
+    background-color: var(--themeColor);
+    color: white;
     border: none;
     cursor: pointer;
 }
 
 .contact-right input[type="submit"]:hover {
     background-color: #008a75;
-    color: white;
 }
 
 .g-recaptcha {
