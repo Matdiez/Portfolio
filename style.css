@@ -683,21 +683,12 @@ main {
 }
 
 @media only screen and (min-width: 1920px) {
-
     #home,
     #about,
     #skill,
     #portfolio,
     #contact {
-        padding-left: 10em;
-        padding-right: 10em;
-    }
-
-    .contact-right form {
-        gap: 50px 0;
-    }
-
-    .icon-box {
-        margin: 54px 0;
+        padding-left: 18em;
+        padding-right: 18em;
     }
 }
