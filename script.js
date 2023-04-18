@@ -31,6 +31,7 @@ window.addEventListener('scroll', function () {
 })
 
 document.getElementById('form').addEventListener('submit', function (event) {
+    event.preventDefault()
     var recaptcha = document.querySelector('[name="g-recaptcha-response"]');
     if (recaptcha.value === '') {
         event.preventDefault();
