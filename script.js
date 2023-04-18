@@ -37,20 +37,21 @@ document.getElementById('form').addEventListener('submit', function (event) {
     if (recaptcha.value === '') {
         event.preventDefault();
         alert('Por favor, completa el reCAPTCHA');
+    } else {
+        document.getElementById('form')
+            .addEventListener('submit', function (event) {
+                event.preventDefault();
+    
+                const serviceID = 'default_service';
+                const templateID = 'template_hqi1fof';
+    
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                        alert('Sent!');
+                    }, (err) => {
+                        alert(JSON.stringify(err));
+                    });
+                //form.reset()
+            });
     }
-    document.getElementById('form')
-        .addEventListener('submit', function (event) {
-            event.preventDefault();
-
-            const serviceID = 'default_service';
-            const templateID = 'template_hqi1fof';
-
-            emailjs.sendForm(serviceID, templateID, this)
-                .then(() => {
-                    alert('Sent!');
-                }, (err) => {
-                    alert(JSON.stringify(err));
-                });
-            form.reset()
-        });
 });
