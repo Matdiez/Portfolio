@@ -335,7 +335,7 @@
                     </div>
                 </div>
                 <div class="contact-right">
-                    <form name="formulario-contacto" id="form" netlify>
+                    <form name="formulario-contacto" id="form" netlify data-netlify-recaptcha="true">
                         <input type="text" name="name" placeholder="Name" pattern="[a-z A-Z]+"
                             minlength="3" maxlength="30" required>
                         <input type="email" name="email" placeholder="E-mail" required>
@@ -343,8 +343,9 @@
                             minlength="3" maxlength="20" required>
                         <textarea name="message" rows="9" placeholder="Message" maxlength="250"
                             required></textarea>
-                        <div class="g-recaptcha" data-sitekey="6Lch1UslAAAAALlB3G5GRaHceLJfrH1Qy-KkpUkJ"
-                            aria-required="true"></div>
+                        <div data-netlify-recaptcha="true"></div>
+                        <!--<div class="g-recaptcha" data-sitekey="6Lch1UslAAAAALlB3G5GRaHceLJfrH1Qy-KkpUkJ"
+                            aria-required="true"></div>-->
                         <input type="submit" id="button" value="Send">
                     </form>
                 </div>
