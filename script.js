@@ -29,27 +29,3 @@ window.addEventListener('scroll', function () {
         }
     })
 })
-
-document.getElementById('form').addEventListener('submit', function (event) {
-    event.preventDefault()
-    var recaptcha = document.querySelector('[name="g-recaptcha-response"]');
-    if (recaptcha.value === '') {
-        event.preventDefault();
-        alert('Por favor, completa el reCAPTCHA');
-    }
-    /*document.getElementById('form')
-        .addEventListener('submit', function (event) {
-            event.preventDefault();
-
-            const serviceID = 'default_service';
-            const templateID = 'template_hqi1fof';
-
-            emailjs.sendForm(serviceID, templateID, this)
-                .then(() => {
-                    alert('Sent!');
-                }, (err) => {
-                    alert(JSON.stringify(err));
-                });
-            form.reset()
-        })*/
-})
