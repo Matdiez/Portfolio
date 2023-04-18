@@ -30,14 +30,14 @@ window.addEventListener('scroll', function () {
     })
 })
 
-document.getElementById('form').addEventListener('submit', function (event) {
+/*document.getElementById('form').addEventListener('submit', function (event) {
     event.preventDefault()
     var recaptcha = document.querySelector('[name="g-recaptcha-response"]');
     if (recaptcha.value === '') {
         event.preventDefault();
         alert('Por favor, completa el reCAPTCHA');
     }
-    /*document.getElementById('form')
+    document.getElementById('form')
         .addEventListener('submit', function (event) {
             event.preventDefault();
 
@@ -51,5 +51,5 @@ document.getElementById('form').addEventListener('submit', function (event) {
                     alert(JSON.stringify(err));
                 });
             form.reset()
-        });*/
-});
+        })
+});*/
