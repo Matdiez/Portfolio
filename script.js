@@ -29,3 +29,11 @@ window.addEventListener('scroll', function () {
         }
     })
 })
+
+document.getElementById("button").addEventListener("click", function() {
+    var response = grecaptcha.getResponse();
+    if(response.length == 0) {
+      alert("Please complete the reCAPTCHA.");
+      return false;
+    }
+  });
